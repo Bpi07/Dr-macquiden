@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Macquiden - Fisioterapia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1F2C5A;
+            color: white;
+        }
+        .section-light {
+            background-color: #FFFFFF;
+            color: #1F2C5A;
+        }
+        .text-orange-custom {
+            color: #FF8C00;
+        }
+        .bg-orange-custom {
+            background-color: #FF8C00;
+        }
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-container {
+            overflow: hidden;
+            position: relative;
+        }
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-item {
+            flex: 0 0 100%;
+        }
+        .whatsapp-button {
+            background-color: #9B796D;
+        }
+        .whatsapp-button:hover {
+            background-color: #8C6D63;
+        }
+        /* Mobile first adjustments */
+        @media (max-width: 768px) {
+            .video-section {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#1F2C5A] text-white">
+
+    <!-- Header and Navigation -->
+    <header class="py-6 px-4 md:px-8">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#">
+                <img src="/Logo.png" alt="Logo Dr. Macquiden" class="h-10">
+            </a>
+            <button class="md:hidden">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#sobre" class="hover:text-orange-custom">Sobre Mim</a></li>
+                <li><a href="#video-section" class="hover:text-orange-custom">Vídeo</a></li>
+                <li><a href="#servicos" class="hover:text-orange-custom">Serviços</a></li>
+                <li><a href="#depoimentos" class="hover:text-orange-custom">Depoimentos</a></li>
+                <li><a href="https://wa.me/5511999999999" target="_blank" class="bg-orange-custom px-4 py-2 rounded-lg btn-hover transition duration-300 flex items-center">
+                    <span>Agende sua consulta</span>
+                </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-- Banner Principal -->
+        <section class="section-light py-16">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="flex flex-col md:flex-row items-center">
+                    <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                        <h1 class="text-3xl md:text-5xl font-bold leading-tight text-[#1F2C5A]">Fisioterapia no conforto da sua casa</h1>
+                        <p class="mt-4 text-lg md:text-xl text-gray-700">Atendimento especializado em fisioterapia ortopédica e neurológica para idosos e problemas de coluna.</p>
+                        <a href="https://wa.me/5511999999999" target="_blank" class="bg-orange-custom px-6 py-3 mt-8 rounded-lg font-bold btn-hover transition duration-300 inline-block text-white">
+                            Agende sua consulta
+                        </a>
+                    </div>
+                    <div class="md:w-1/2 flex justify-center">
+                        <!-- Imagem do Dr. Macquiden -->
+                        <img src="/capa1.png" alt="Dr. Macquiden em ação" class="rounded-xl shadow-lg w-full max-w-md">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Vídeo -->
+        <section id="video-section" class="section-light py-16">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-[#1F2C5A] mb-12">Conheça o Dr. Macquiden</h2>
+                <div class="max-w-4xl mx-auto">
+                    <iframe class="w-full aspect-video rounded-xl shadow-lg" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="flex justify-center mt-8">
+                        <a href="https://wa.me/5511999999999" target="_blank" class="bg-orange-custom px-6 py-3 rounded-lg font-bold btn-hover transition duration-300 text-white">
+                            Marque uma consulta agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção "Sobre Mim" -->
+        <section id="sobre" class="py-16">
+            <div class="container mx-auto px-4 md:px-8">
+                <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                    <div class="mb-8 md:mb-0 md:w-1/3 flex justify-center items-center">
+                        <img src="/capa1.png" alt="Dr. Macquiden" class="rounded-xl shadow-lg w-full max-w-xs">
+                    </div>
+                    <div class="md:w-2/3 flex items-center justify-center">
+                        <div class="text-center md:text-left">
+                            <h3 class="text-xl md:text-2xl font-bold mb-4 text-orange-custom">Sobre Mim</h3>
+                            <p class="text-lg text-gray-300 mb-6">
+                                Sou natural de Governador Valadares/MG, mas adotei Juiz de Fora como minha cidade do coração. Sou casado e pai do Henrique.
+                            </p>
+                            <p class="text-lg text-gray-300 mb-6">
+                                Formei-me em Fisioterapia pela <b>UFJF</b>, com especialização em <b>Quiropraxia</b> e pós-graduação em <b>Ortopedia</b>. Desde os 15 anos, descobri na fisioterapia minha grande paixão e desde então venho construindo uma trajetória de dedicação e aprendizado.
+                            </p>
+                            <p class="text-lg text-gray-300 mb-6">
+                                Ao longo da minha carreira, tive a oportunidade de atuar em <b>clubes de futebol, hospitais e clínicas de referência</b>, adquirindo experiência em diferentes áreas e consolidando meu compromisso em oferecer tratamentos eficazes e humanos.
+                            </p>
+                            <p class="text-lg text-gray-300 mb-6">
+                                Minha missão é <b>impactar positivamente a vida de cada paciente</b>, ajudando a recuperar movimentos, aliviar dores e conquistar mais qualidade de vida.
+                            </p>
+                            <p class="text-lg text-gray-300">
+                                Quando começarmos a trabalhar juntos, o seu objetivo de melhorar será também o meu. Estarei ao seu lado em cada etapa, fazendo o máximo para que você alcance suas metas e volte a viver sem limitações.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios do Atendimento em Casa -->
+        <section class="py-12 section-light">
+            <div class="container mx-auto px-4 md:px-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-orange-custom mb-8">Benefícios do atendimento em casa</h3>
+                <div class="grid md:grid-cols-4 gap-8 text-[#1F2C5A]">
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border border-transparent hover:border-orange-custom hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                        <h4 class="text-xl font-bold mb-2">01 – Evite o trânsito</h4>
+                        <p class="text-gray-700 text-sm">Com o atendimento domiciliar, você não precisa perder tempo nem energia enfrentando o trânsito até a clínica.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border border-transparent hover:border-orange-custom hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                        <h4 class="text-xl font-bold mb-2">02 – Ambiente confortável</h4>
+                        <p class="text-gray-700 text-sm">Nada de ambientes frios ou impessoais. Você recebe o tratamento no lugar onde já se sente à vontade, o que aumenta a adesão e os resultados do tratamento.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border border-transparent hover:border-orange-custom hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                        <h4 class="text-xl font-bold mb-2">03 – Fisioterapia moderna</h4>
+                        <p class="text-gray-700 text-sm">O atendimento em casa conta com os mesmos recursos e métodos modernos utilizados em clínica, sem perder em qualidade.</p>
+                    </div>
+                    <div class="bg-gray-100 p-6 rounded-xl shadow-lg border border-transparent hover:border-orange-custom hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center">
+                        <h4 class="text-xl font-bold mb-2">04 – Mais flexibilidade</h4>
+                        <p class="text-gray-700 text-sm">Os horários podem ser ajustados de acordo com a sua rotina, indo além do horário comercial e levando saúde até você quando for mais conveniente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos" class="section-light py-16">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-orange-custom mb-12">Nossos Serviços</h2>
+                <div class="grid md:grid-cols-2 gap-8 text-gray-800">
+                    <div class="bg-white/10 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl md:text-2xl font-bold mb-4">Fisioterapia para Idosos</h3>
+                        <p class="text-gray-700">Programas de reabilitação e fortalecimento muscular focados em melhorar a mobilidade e a independência de idosos, prevenindo quedas e lesões.</p>
+                    </div>
+                    <div class="bg-white/10 p-8 rounded-xl shadow-lg text-center">
+                        <h3 class="text-xl md:text-2xl font-bold mb-4">Tratamento de Coluna</h3>
+                        <p class="text-gray-700">Técnicas especializadas para alívio de dores nas costas, hérnias de disco, ciatalgia e outros problemas de coluna, com exercícios e terapias manuais.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção "Para Quem é Indicado" -->
+        <section class="section-light py-12">
+            <div class="container mx-auto px-4 md:px-8">
+                <h3 class="text-2xl md:text-3xl font-bold text-center text-orange-custom mb-8">Para quem é indicado</h3>
+                <div class="grid md:grid-cols-3 gap-8 text-center text-[#1F2C5A]">
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                        <img src="/fto01.png" alt="Idoso recebendo atendimento de fisioterapia" class="rounded-lg w-full mb-4">
+                        <h4 class="text-xl font-bold">Idosos ou pessoas com mobilidade reduzida</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                        <img src="/fto02.png" alt="Paciente em recuperação de cirurgia" class="rounded-lg w-full mb-4">
+                        <h4 class="text-xl font-bold">Pacientes em recuperação de cirurgias ou acidentes</h4>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-lg border border-gray-300 flex flex-col items-center hover:shadow-xl transition-all duration-300">
+                        <img src="/fto03.png" alt="Pessoa em casa evitando o trânsito" class="rounded-lg w-full mb-4">
+                        <h4 class="text-xl font-bold">Quem prefere evitar deslocamentos, trânsito e ambientes hospitalares</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Seção de Call to Action Final -->
+        <section class="py-16 text-center">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold mb-8">
+                    Dr. Macquiden atende em toda <span class="text-orange-custom">Juiz de Fora</span>.
+                </h2>
+                <p class="text-lg md:text-xl text-gray-300 mb-8">
+                    Agende sua avaliação e descubra como a fisioterapia domiciliar pode transformar sua rotina e acelerar sua recuperação.
+                </p>
+                <a href="https://wa.me/5511999999999" target="_blank" class="bg-orange-custom px-8 py-4 rounded-lg font-bold btn-hover transition duration-300 text-white inline-block">
+                    Agende sua consulta
+                </a>
+            </div>
+        </section>
+
+        <!-- Seção de Benefícios e Depoimentos -->
+        <section id="depoimentos" class="py-16">
+            <div class="container mx-auto px-4 md:px-8">
+                <h2 class="text-3xl md:text-4xl font-bold text-center text-orange-custom mb-12">Benefícios e Depoimentos</h2>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <!-- Benefícios -->
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Benefícios do Atendimento Domiciliar</h3>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-start">
+                                <span class="text-orange-custom mr-3">&#10003;</span>
+                                Conforto do seu lar
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-custom mr-3">&#10003;</span>
+                                Flexibilidade de horários
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-custom mr-3">&#10003;</span>
+                                Economia de tempo e dinheiro
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-orange-custom mr-3">&#10003;</span>
+                                Atendimento personalizado e exclusivo
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Depoimentos (Carrossel) -->
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="depoimentos-track">
+                            <div class="carousel-item p-4">
+                                <blockquote class="bg-white/10 p-6 rounded-xl shadow-lg">
+                                    <p class="italic text-gray-200">"O atendimento do Dr. Macquiden foi excepcional. Me senti muito mais confortável e segura com a fisioterapia em casa. Minha recuperação foi incrível!"</p>
+                                    <footer class="mt-4 font-bold text-orange-custom">- Maria L.</footer>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item p-4">
+                                <blockquote class="bg-white/10 p-6 rounded-xl shadow-lg">
+                                    <p class="italic text-gray-200">"Sempre tive problemas de coluna e o tratamento do Dr. Macquiden melhorou muito minha qualidade de vida. Recomendo a todos!"</p>
+                                    <footer class="mt-4 font-bold text-orange-custom">- João P.</footer>
+                                </blockquote>
+                            </div>
+                            <div class="carousel-item p-4">
+                                <blockquote class="bg-white/10 p-6 rounded-xl shadow-lg">
+                                    <p class="italic text-gray-200">"Nunca imaginei que a fisioterapia em casa seria tão eficaz. O Dr. Macquiden é um excelente profissional, muito atencioso e dedicado."</p>
+                                    <footer class="mt-4 font-bold text-orange-custom">- Ana R.</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="flex justify-center mt-4 space-x-2">
+                            <button class="w-2 h-2 rounded-full bg-orange-custom" onclick="goToSlide(0)"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-400" onclick="goToSlide(1)"></button>
+                            <button class="w-2 h-2 rounded-full bg-gray-400" onclick="goToSlide(2)"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-gray-400">
+        <p>&copy; 2024 Dr. Macquiden. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        const track = document.getElementById('depoimentos-track');
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.flex.justify-center button');
+        let currentIndex = 0;
+
+        function updateCarousel() {
+            track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.remove('bg-orange-custom');
+                dot.classList.add('bg-gray-400');
+                if (index === currentIndex) {
+                    dot.classList.remove('bg-gray-400');
+                    dot.classList.add('bg-orange-custom');
+                }
+            });
+        }
+
+        function goToSlide(index) {
+            currentIndex = index;
+            updateCarousel();
+        }
+
+        // Auto-play the carousel
+        setInterval(() => {
+            currentIndex = (currentIndex + 1) % slides.length;
+            updateCarousel();
+        }, 5000); // Change slide every 5 seconds
+    </script>
+</body>
+</html>
